@@ -123,8 +123,8 @@ const steps: [string, string][] = [
   ["1. Requirements", "Worked with the product stakeholders, the CEO and engineering to turn requests into clearly defined user problems. I asked what users were trying to do, not just what was asked for. We used to get those requirements in Jira board."],
   ["2. Research", "Reviewed user interview recordings and competitors, and developed an understanding of scheduling concepts such as WBS, constraints, critical paths and float. A flow can look simple and still break on a missed dependency."],
   ["3. User flows", "Mapped end-to-end flows before designing any screen, so edge cases showed up early."],
-  ["4. Wireframes and explorations", "Created wireframes to explore multiple solutions and evaluated their trade-offs before committing to one"],
-  ["5. UI and prototype", "Final UI, then a clickable prototype to walk the flow and catch gaps. For 15+ features I used Claude Code and Figma Make, so stakeholders could try a live prototype in 3–4 hours instead of 3–4 days like WBS edit mode"],
+  ["4. Wireframes and explorations", "Created wireframes to explore multiple solutions and evaluated their trade-offs before committing to one."],
+  ["5. UI and prototype", "Final UI, then a clickable prototype to walk the flow and catch gaps. For 15+ features I used Claude Code and Figma Make, so stakeholders could try a live prototype in 3–4 hours instead of 3–4 days like WBS edit mode."],
   ["6. Handoff and review", "Delivered annotated Figma designs, prototypes and Loom walkthroughs, then reviewed builds to catch implementation gaps before QA."],
 ];
 const wbsFeatures: [string, string][] = [
@@ -214,7 +214,7 @@ export default function CaseStudy() {
           <Split title="Research and the Canvas bet">
             <Reveal className={`${copy} flex flex-col gap-[1.667em]`}>
               <p>We watched recordings of user interviews as a team. The pattern was clear: people think in groups of activities and links, but their software showed rows and bars.</p>
-              <p>To test that, we put simple shapes for activities, groups and milestones on a Miro board and asked users to build a schedule. [N participants, type of user.] It felt natural to them. [One specific observation or quote.]</p>
+              <p>To test that, we put simple shapes for activities, groups and milestones on a Miro board and asked users to build a schedule. It felt natural to them.</p>
             </Reveal>
             <Callout title="THAT BECAME THE PRODUCT’S CORE IDEA">
               <ul className={ul}>
