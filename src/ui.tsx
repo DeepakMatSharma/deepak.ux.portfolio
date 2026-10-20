@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 
 export const A = `${import.meta.env.BASE_URL}assets/`;
-// TODO: the Figma file has no real URLs for these two buttons. Fill them in.
-export const links = { linkedin: "#", email: "#" };
+export const links = {
+  linkedin: "https://www.linkedin.com/in/ux-deepak/",
+  email: "mailto:ux.deepak@gmail.com",
+};
 
 export function Section({ children, className = "", flush = false }: { children: ReactNode; className?: string; flush?: boolean }) {
   return (

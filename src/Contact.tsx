@@ -1,9 +1,13 @@
 import { A, Display, Reveal, Section, links } from "./ui";
 
 function IconLink({ href, label, name, inset }: { href: string; label: string; name: string; inset: string }) {
+  const isExternal = href.startsWith("http");
   return (
     <a
-      href={href} aria-label={label}
+      href={href}
+      aria-label={label}
+      target={isExternal ? "_blank" : undefined}
+      rel={isExternal ? "noopener noreferrer" : undefined}
       className="relative block size-16 shrink-0 overflow-hidden rounded-full outline-offset-4 focus-visible:outline-2"
     >
       <img src={`${A}${name}-group.svg`} alt="" className={`absolute block max-w-none ${inset}`} />
