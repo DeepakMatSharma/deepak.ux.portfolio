@@ -1,5 +1,6 @@
 import { Fragment, type ReactNode } from "react";
 import Contact from "./Contact";
+import { go, HOME } from "./router";
 import { A, ComingSoon, Reveal } from "./ui";
 
 const h2 = "font-serif text-h2 font-bold tracking-[-0.03125em]";
@@ -143,6 +144,16 @@ export default function CaseStudy() {
     <>
       <main className="[--pad-y:clamp(4.5rem,7.8125vw,9.375rem)]">
         <Band bg="bg-white" className="gap-6">
+          <Reveal>
+            <a
+              href={HOME}
+              onClick={go}
+              className="group inline-flex items-center gap-2 text-body font-medium text-ink-soft transition-colors hover:text-black mb-2"
+            >
+              <span className="transition-transform duration-200 group-hover:-translate-x-1" aria-hidden>←</span>
+              <span>Back to all work</span>
+            </a>
+          </Reveal>
           <Reveal className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
             <div className="flex flex-col gap-[clamp(1.5rem,2.5vw,3rem)] lg:w-[66.6%]">
               <h1 className="font-serif text-display font-bold italic tracking-[-0.0069em]">

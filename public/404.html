@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting · Deepak Sharma</title>
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var segments = path.split("/").filter(Boolean);
+        var search = window.location.search || "";
+        var hash = window.location.hash || "";
+
+        var isGithubPages = window.location.hostname.endsWith("github.io");
+        var base = "/";
+        var route = "";
+
+        if (isGithubPages && segments.length > 0) {
+          base = "/" + segments[0] + "/";
+          route = segments.slice(1).join("/");
+        } else {
+          route = segments.join("/");
+        }
+
+        var redirectUrl = window.location.origin + base + (route ? "#/" + route : "") + search + hash;
+        window.location.replace(redirectUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="./">portfolio</a>...</p>
+  </body>
+</html>
