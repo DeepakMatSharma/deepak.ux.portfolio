@@ -228,7 +228,7 @@ export default function CaseStudy() {
         <Band bg="bg-mist" className={`gap-[clamp(5rem,12.5vw,15rem)]`}>
           <Split title="My Process">
             <Block title="How a feature moved from request to release">
-              <p>The same six steps ran across most of the ~200 features, scaled to the size of the feature. The three chapters that follow don't repeat them; they show what I decided inside them.</p>
+              <p>The same six steps ran across most of the ~200 features, scaled to the size of the feature.</p>
             </Block>
           </Split>
           <Cols items={steps} bold />
