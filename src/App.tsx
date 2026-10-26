@@ -1,8 +1,10 @@
 import { useEffect, type ReactNode } from "react";
 import Approach from "./Approach";
 import CaseStudy from "./CaseStudy";
+import CaseStudyEmployment from "./CaseStudyEmployment";
+import CaseStudyEnvironment from "./CaseStudyEnvironment";
 import Contact from "./Contact";
-import { go, PLANERA, usePath } from "./router";
+import { EMPLOYMENT, ENVIRONMENT, go, PLANERA, usePath } from "./router";
 import { A, ComingSoon, Display, Section } from "./ui";
 
 const gap = "gap-[clamp(1rem,1.667vw,2rem)]";
@@ -69,7 +71,11 @@ function CaseStudies() {
               />
             </div>
           </Card>
-          <Card soon title="Bridging the gap between employers and blue-collar workers" tag="B2C Mobile App · Talent Marketplace">
+          <Card
+            href={EMPLOYMENT}
+            title="Bridging the gap between employers and blue-collar workers"
+            tag="B2C Mobile App · Talent Marketplace"
+          >
             <div className="relative aspect-[21/16] overflow-hidden">
               <div className={`absolute inset-0 ${zoom}`}>
                 <img
@@ -78,17 +84,19 @@ function CaseStudies() {
                   className="absolute top-[-55.47%] left-[-33.33%] h-[164.84%] w-[188.39%] max-w-none"
                 />
               </div>
-              <ComingSoon />
             </div>
           </Card>
-          <Card soon title="Transforming real-time environmental data into actionable insights" tag="B2B SaaS · Environmental Technology">
+          <Card
+            href={ENVIRONMENT}
+            title="Transforming real-time environmental data into actionable insights"
+            tag="B2B SaaS · Environmental Technology"
+          >
             <div className="relative overflow-hidden">
               <img
                 src={`${A}case-environment.png`} alt="Industrial plant releasing smoke over fields at sunset"
                 width={840} height={640} loading="lazy" decoding="async"
                 className={`aspect-[21/16] w-full object-cover ${zoom}`}
               />
-              <ComingSoon />
             </div>
           </Card>
         </div>
@@ -110,9 +118,24 @@ function Home() {
 
 export default function App() {
   const path = usePath();
-  const isCase = path === PLANERA;
+  const isPlanera = path === PLANERA;
+  const isEmployment = path === EMPLOYMENT;
+  const isEnvironment = path === ENVIRONMENT;
+
   useEffect(() => {
-    document.title = isCase ? "Planera case study · Deepak Sharma" : "Deepak Sharma · Product Designer";
-  }, [isCase]);
-  return isCase ? <CaseStudy /> : <Home />;
+    if (isPlanera) {
+      document.title = "Planera case study · Deepak Sharma";
+    } else if (isEmployment) {
+      document.title = "Employment app case study · Deepak Sharma";
+    } else if (isEnvironment) {
+      document.title = "Environmental monitoring case study · Deepak Sharma";
+    } else {
+      document.title = "Deepak Sharma · Product Designer";
+    }
+  }, [isPlanera, isEmployment, isEnvironment]);
+
+  if (isPlanera) return <CaseStudy />;
+  if (isEmployment) return <CaseStudyEmployment />;
+  if (isEnvironment) return <CaseStudyEnvironment />;
+  return <Home />;
 }
