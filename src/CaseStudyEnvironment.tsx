@@ -49,7 +49,7 @@ function Block({ title, tight, children }: { title?: string; tight?: boolean; ch
 /** Web app screenshot card with subtle border and elevation */
 function ScreenShot({ src, alt, width, height }: { src: string; alt: string; width: number; height: number }) {
   return (
-    <div className="group overflow-hidden rounded-[8px] border border-line bg-surface p-2 shadow-sm transition-transform duration-300 hover:shadow-md md:p-3">
+    <div className="overflow-hidden rounded-[8px] border border-line bg-surface p-2 md:p-3">
       <img
         src={`${A}${src}`}
         alt={alt}
@@ -57,16 +57,16 @@ function ScreenShot({ src, alt, width, height }: { src: string; alt: string; wid
         decoding="async"
         width={width}
         height={height}
-        className="w-full object-contain transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+        className="w-full object-contain"
       />
     </div>
   );
 }
 
-const meta = [
+const meta: [string, ReactNode][] = [
   ["MY ROLE", "Product Designer"],
   ["TEAM", "Sole Designer"],
-  ["RESPONSIBILITIES", "Requirements Gathering, Information Architecture, UI/UX Design, Design handoff"],
+  ["RESPONSIBILITIES", <>Requirements Gathering, Information Architecture,<br />UI/UX Design, Design handoff</>],
   ["PROJECT DURATION", "3 months"],
 ];
 const tags = ["Environmental Monitoring", "B2B SaaS"];
@@ -87,7 +87,7 @@ export default function CaseStudyEnvironment() {
               <span>Back to all work</span>
             </a>
           </Reveal>
-          <Reveal className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
+          <Reveal className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-[6.8%]">
             <div className="flex flex-col gap-[clamp(1.5rem,2.5vw,3rem)] lg:w-[66.6%]">
               <h1 className="font-serif text-display font-bold italic tracking-[-0.0069em]">
                 Redesigning a Complex Environmental Monitoring Platform into a Clear, Connected Experience
@@ -118,12 +118,12 @@ export default function CaseStudyEnvironment() {
         {/* Hero image */}
         <Reveal>
           <img
-            src={`${A}case-environment.png`}
+            src={`${A}case-environment.jpg`}
             alt="Industrial plant releasing smoke over fields at sunset"
             width={1920}
             height={704}
             decoding="async"
-            className="aspect-[16/10] w-full object-cover object-center md:aspect-[1920/704]"
+            className="aspect-[16/10] w-full object-cover object-[50%_40%] md:aspect-[1920/704]"
           />
         </Reveal>
 
@@ -295,7 +295,7 @@ export default function CaseStudyEnvironment() {
                   alt="Construction site with workers, scaffolding and steel reinforcement"
                   loading="lazy"
                   decoding="async"
-                  className="size-full object-cover object-[50%_76.2%] transition-transform duration-500 ease-out group-hover:scale-[1.08]"
+                  className="size-full object-cover object-[50%_76.2%]"
                 />
               </div>
             </a>

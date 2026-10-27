@@ -50,7 +50,7 @@ function Block({ title, tight, children, dark = false }: { title: string; tight?
 function PhoneShot({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="flex justify-center py-4 lg:py-0">
-      <div className="group relative w-full max-w-[340px] transition-transform duration-500 ease-out hover:scale-[1.03] md:max-w-[400px]">
+      <div className="relative w-full max-w-[340px] md:max-w-[400px]">
         <img
           src={`${A}${src}`}
           alt={alt}
@@ -96,7 +96,7 @@ export default function CaseStudyEmployment() {
               <span>Back to all work</span>
             </a>
           </Reveal>
-          <Reveal className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
+          <Reveal className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-[6.8%]">
             <div className="flex flex-col gap-[clamp(1.5rem,2.5vw,3rem)] lg:w-[66.6%]">
               <h1 className="font-serif text-display font-bold italic tracking-[-0.0069em]">
                 Bridging the gap between employers and blue-collar workers
@@ -248,7 +248,7 @@ export default function CaseStudyEmployment() {
                 </p>
               </Block>
             </div>
-            <div className="overflow-hidden rounded-[8px] border border-line bg-surface p-4 shadow-sm transition-transform duration-300 hover:shadow-md lg:shrink-0 lg:basis-[52%]">
+            <div className="overflow-hidden rounded-[8px] border border-line bg-surface p-4 lg:shrink-0 lg:basis-[52%]">
               <img
                 src={`${A}cs-hiring-user-flow.png`}
                 alt="Information architecture and core user flow diagram"
@@ -268,7 +268,7 @@ export default function CaseStudyEmployment() {
                 <p>Created rough wireframes to explore few directions internally</p>
               </Block>
             </div>
-            <div className="overflow-hidden rounded-[8px] border border-line bg-surface p-2 shadow-sm transition-transform duration-300 hover:shadow-md lg:shrink-0 lg:basis-[50%]">
+            <div className="overflow-hidden rounded-[8px] border border-line bg-surface p-2 lg:shrink-0 lg:basis-[50%]">
               <img
                 src={`${A}cs-hiring-wireframes.png`}
                 alt="Wireframes for Home Screen, Job Portal, and Contract Sign"
@@ -409,7 +409,7 @@ export default function CaseStudyEmployment() {
                   height={600}
                   loading="lazy"
                   decoding="async"
-                  className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.08]"
+                  className="size-full object-cover"
                 />
               </div>
             </a>

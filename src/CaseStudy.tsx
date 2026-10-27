@@ -1,6 +1,6 @@
 import { Fragment, type ReactNode } from "react";
 import Contact from "./Contact";
-import { EMPLOYMENT, go, HOME } from "./router";
+import { go, HOME } from "./router";
 import { A, ComingSoon, Reveal } from "./ui";
 
 const h2 = "font-serif text-h2 font-bold tracking-[-0.03125em]";
@@ -363,27 +363,11 @@ export default function CaseStudy() {
           <Reveal className={`flex flex-col gap-10 lg:flex-row lg:items-center ${colGap}`}>
             <div className="flex flex-col gap-4 lg:flex-1">
               <p className="text-title tracking-[-0.025em] text-ink-soft">Next case study</p>
-              <a href={EMPLOYMENT} onClick={go} className="group">
-                <p className="font-serif text-display font-bold italic tracking-[-0.0069em] transition-colors group-hover:text-black/70">
-                  Bridging the gap between employers and blue-collar workers
-                </p>
-              </a>
+              <p className="font-serif text-display font-bold italic tracking-[-0.0069em]">Bridging the gap between employers and blue-collar workers</p>
             </div>
-            <a
-              href={EMPLOYMENT}
-              onClick={go}
-              className="group overflow-hidden rounded-[6px] lg:shrink-0 lg:basis-[46.59%]"
-            >
-              <div className="relative aspect-[820/600] overflow-hidden">
-                <img
-                  src={`${A}next-case.png`}
-                  alt="Two professionals shaking hands across a table"
-                  loading="lazy"
-                  decoding="async"
-                  className="absolute top-[-55.47%] left-[-33.33%] h-[164.84%] w-[188.39%] max-w-none transition-transform duration-500 ease-out group-hover:scale-[1.08]"
-                />
-              </div>
-            </a>
+            <Shot src="next-case.png" alt="Two professionals shaking hands across a table" aspect="820/600" crop={[164.84, -33.33, -55.47, 188.39]} frame="round" className="group lg:shrink-0 lg:basis-[46.59%]">
+              <ComingSoon />
+            </Shot>
           </Reveal>
         </Band>
       </main>
