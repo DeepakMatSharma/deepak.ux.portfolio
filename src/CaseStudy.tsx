@@ -1,7 +1,7 @@
 import { Fragment, type ReactNode } from "react";
 import Contact from "./Contact";
-import { go, HOME } from "./router";
-import { A, ComingSoon, Reveal } from "./ui";
+import { EMPLOYMENT, go, HOME } from "./router";
+import { A, Reveal } from "./ui";
 
 const h2 = "font-serif text-h2 font-bold tracking-[-0.03125em]";
 const h3 = "text-body font-semibold tracking-[-0.0167em] text-black";
@@ -184,7 +184,7 @@ export default function CaseStudy() {
 
         <Reveal>
           <img
-            src={`${A}planera-hero.png`} alt="Construction site with workers, scaffolding and steel reinforcement"
+            src={`${A}planera-hero.webp`} alt="Construction site with workers, scaffolding and steel reinforcement"
             width={1920} height={704} decoding="async"
             className="aspect-[16/10] w-full object-cover object-[50%_76.2%] md:aspect-[1920/704]"
           />
@@ -250,13 +250,13 @@ export default function CaseStudy() {
             </Row>
           </div>
           <div className="lg:w-1/2"><Block title="The Decision" tight><p>Match the pattern to the task</p></Block></div>
-          <Media shot={<Shot src="cs-version-gantt.png" alt="Gantt view in version comparison mode" aspect="981/499" frame="none" className="lg:shrink-0 lg:basis-[55.74%]" />}>
+          <Media shot={<Shot src="cs-version-gantt.webp" alt="Gantt view in version comparison mode" aspect="981/499" frame="none" className="lg:shrink-0 lg:basis-[55.74%]" />}>
             <Block title="Gantt first" tight><p>Comparison is an analytical task, so Gantt received a dedicated mode for examining differences without complicating everyday scheduling.</p></Block>
           </Media>
-          <Media flip shot={<Shot src="cs-version-table.png" alt="Table view with a Variance tab and extra version columns" aspect="866/480" crop={[100, -11.13, 0, 125.54]} className="lg:shrink-0 lg:basis-[49.2%]" />}>
+          <Media flip shot={<Shot src="cs-version-table.webp" alt="Table view with a Variance tab and extra version columns" aspect="866/480" crop={[100, -11.13, 0, 125.54]} className="lg:shrink-0 lg:basis-[49.2%]" />}>
             <Block title="Table later, differently" tight><p>When users asked for it, I didn't copy the side-by-side pattern. I introduced a Variance tab that lets users add variance columns for chosen fields, up to two extra versions.</p></Block>
           </Media>
-          <Media shot={<Shot src="cs-version-canvas.png" alt="Canvas view without any comparison layer" aspect="1045/480" crop={[117.77, -14.43, -9.23, 122.5]} className="lg:shrink-0 lg:basis-[59.38%]" />}>
+          <Media shot={<Shot src="cs-version-canvas.webp" alt="Canvas view without any comparison layer" aspect="1045/480" crop={[117.77, -14.43, -9.23, 122.5]} className="lg:shrink-0 lg:basis-[59.38%]" />}>
             <Block title="Canvas stayed clean" tight><p>Canvas stays focused on creating and arranging the plan, with no comparison layer added.</p></Block>
           </Media>
           <Callout title="WHAT I LEARNED">
@@ -293,8 +293,8 @@ export default function CaseStudy() {
             </Row>
           </div>
           <Reveal className="flex flex-col gap-8 lg:flex-row lg:items-start lg:gap-[3.18%]">
-            <Shot src="cs-wbs-base.png" alt="WBS Edit mode base screen designed in Figma" aspect="623/580" crop={[100.34, -0.02, -0.34, 100.03]} className="lg:shrink-0 lg:basis-[35.4%]" />
-            <Shot src="cs-wbs-prototype.png" alt="WBS Edit mode interactive prototype built with Claude Design" aspect="960/582" crop={[101.05, -0.32, -1.04, 101.57]} className="lg:flex-1" />
+            <Shot src="cs-wbs-base.webp" alt="WBS Edit mode base screen designed in Figma" aspect="623/580" crop={[100.34, -0.02, -0.34, 100.03]} className="lg:shrink-0 lg:basis-[35.4%]" />
+            <Shot src="cs-wbs-prototype.webp" alt="WBS Edit mode interactive prototype built with Claude Design" aspect="960/582" crop={[101.05, -0.32, -1.04, 101.57]} className="lg:flex-1" />
           </Reveal>
           <div className={`flex flex-col ${g56}`}>
             <Row label="The result">
@@ -309,7 +309,7 @@ export default function CaseStudy() {
         <Band bg="bg-mist" className={g80}>
           <H2>Also shipped</H2>
           <div className={`flex flex-col ${g120}`}>
-            <Media shot={<Shot src="cs-onboarding.png" alt="Illustrated empty state guiding users to start their first project" aspect="982/396" crop={[159.6, -3.56, -37.03, 107.13]} className="lg:shrink-0 lg:basis-[55.8%]" />}>
+            <Media shot={<Shot src="cs-onboarding.webp" alt="Illustrated empty state guiding users to start their first project" aspect="982/396" crop={[159.6, -3.56, -37.03, 107.13]} className="lg:shrink-0 lg:basis-[55.8%]" />}>
               <div className="flex flex-col justify-between gap-4 lg:min-h-[min(11.875vw,228px)]">
                 <h3 className={h3}>Onboarding: Simplifying the first experience</h3>
                 <div className={copy}>
@@ -318,7 +318,7 @@ export default function CaseStudy() {
                 </div>
               </div>
             </Media>
-            <Media flip shot={<Shot src="cs-canvas-shortcut.png" alt="Canvas activity chain created with the Shift + Enter shortcut" aspect="897/415" className="lg:shrink-0 lg:basis-[50.97%]" />}>
+            <Media flip shot={<Shot src="cs-canvas-shortcut.webp" alt="Canvas activity chain created with the Shift + Enter shortcut" aspect="897/415" className="lg:shrink-0 lg:basis-[50.97%]" />}>
               <Block title="Canvas interactions: Faster activity creation">
                 <ul className={ul}>
                   <li>Introduced a Shift + Enter shortcut for creating activity chains, reducing the workflow from approximately 3–4 steps to 2. </li>
@@ -326,7 +326,7 @@ export default function CaseStudy() {
                 </ul>
               </Block>
             </Media>
-            <Media shot={<Shot src="cs-canvas-embeds.png" alt="Canvas with an embedded image" aspect="864/537" crop={[100.63, 0, -0.63, 100]} className="lg:shrink-0 lg:basis-[49.09%]" />}>
+            <Media shot={<Shot src="cs-canvas-embeds.webp" alt="Canvas with an embedded image" aspect="864/537" crop={[100.63, 0, -0.63, 100]} className="lg:shrink-0 lg:basis-[49.09%]" />}>
               <Block title="Canvas embeds: Solving the need, not just the request">
                 <ul className={ul}>
                   <li>The initial request was to support embedding both images and PDFs on Canvas. When engineering flagged the complexity of PDF embedding, I revisited the underlying use case and realised images already covered the core need. Users could embed screenshots of PDF content or paste a PDF URL to open the full document in a new tab. </li>
@@ -363,11 +363,27 @@ export default function CaseStudy() {
           <Reveal className={`flex flex-col gap-10 lg:flex-row lg:items-center ${colGap}`}>
             <div className="flex flex-col gap-4 lg:flex-1">
               <p className="text-title tracking-[-0.025em] text-ink-soft">Next case study</p>
-              <p className="font-serif text-display font-bold italic tracking-[-0.0069em]">Bridging the gap between employers and blue-collar workers</p>
+              <a href={EMPLOYMENT} onClick={go} className="group">
+                <p className="font-serif text-display font-bold italic tracking-[-0.0069em] transition-colors group-hover:text-black/70">
+                  Bridging the gap between employers and blue-collar workers
+                </p>
+              </a>
             </div>
-            <Shot src="next-case.png" alt="Two professionals shaking hands across a table" aspect="820/600" crop={[164.84, -33.33, -55.47, 188.39]} frame="round" className="group lg:shrink-0 lg:basis-[46.59%]">
-              <ComingSoon />
-            </Shot>
+            <a
+              href={EMPLOYMENT}
+              onClick={go}
+              className="group overflow-hidden rounded-[6px] lg:shrink-0 lg:basis-[46.59%]"
+            >
+              <div className="relative aspect-[820/600] overflow-hidden">
+                <img
+                  src={`${A}next-case.webp`}
+                  alt="Two professionals shaking hands across a table"
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute top-[-55.47%] left-[-33.33%] h-[164.84%] w-[188.39%] max-w-none transition-transform duration-500 ease-out group-hover:scale-[1.08]"
+                />
+              </div>
+            </a>
           </Reveal>
         </Band>
       </main>

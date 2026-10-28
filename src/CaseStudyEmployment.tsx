@@ -127,7 +127,7 @@ export default function CaseStudyEmployment() {
         {/* Hero image */}
         <Reveal>
           <img
-            src={`${A}case-hiring.png`}
+            src={`${A}case-hiring.webp`}
             alt="Two professionals shaking hands across a table"
             width={1920}
             height={704}
@@ -250,7 +250,7 @@ export default function CaseStudyEmployment() {
             </div>
             <div className="overflow-hidden rounded-[8px] border border-line bg-surface p-4 lg:shrink-0 lg:basis-[52%]">
               <img
-                src={`${A}cs-hiring-user-flow.png`}
+                src={`${A}cs-hiring-user-flow.webp`}
                 alt="Information architecture and core user flow diagram"
                 loading="lazy"
                 decoding="async"
@@ -270,7 +270,7 @@ export default function CaseStudyEmployment() {
             </div>
             <div className="overflow-hidden rounded-[8px] border border-line bg-surface p-2 lg:shrink-0 lg:basis-[50%]">
               <img
-                src={`${A}cs-hiring-wireframes.png`}
+                src={`${A}cs-hiring-wireframes.webp`}
                 alt="Wireframes for Home Screen, Job Portal, and Contract Sign"
                 loading="lazy"
                 decoding="async"
@@ -291,7 +291,7 @@ export default function CaseStudyEmployment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[48%]">
-              <PhoneShot src="cs-hiring-onboarding.png" alt="Onboarding screen on iPhone mockup" />
+              <PhoneShot src="cs-hiring-onboarding.webp" alt="Onboarding screen on iPhone mockup" />
             </div>
           </Reveal>
 
@@ -305,7 +305,7 @@ export default function CaseStudyEmployment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[48%]">
-              <PhoneShot src="cs-hiring-login.png" alt="Sign up and login screen on iPhone mockup" />
+              <PhoneShot src="cs-hiring-login.webp" alt="Sign up and login screen on iPhone mockup" />
             </div>
           </Reveal>
 
@@ -319,7 +319,7 @@ export default function CaseStudyEmployment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[48%]">
-              <PhoneShot src="cs-hiring-home-shift.png" alt="Home and shift management screen on iPhone mockup" />
+              <PhoneShot src="cs-hiring-home-shift.webp" alt="Home and shift management screen on iPhone mockup" />
             </div>
           </Reveal>
 
@@ -333,7 +333,7 @@ export default function CaseStudyEmployment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[48%]">
-              <PhoneShot src="cs-hiring-job-discovery.png" alt="Job discovery screen on iPhone mockup" />
+              <PhoneShot src="cs-hiring-job-discovery.webp" alt="Job discovery screen on iPhone mockup" />
             </div>
           </Reveal>
 
@@ -347,7 +347,7 @@ export default function CaseStudyEmployment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[48%]">
-              <PhoneShot src="cs-hiring-contract-signing.png" alt="Digital contract signing screen on iPhone mockup" />
+              <PhoneShot src="cs-hiring-contract-signing.webp" alt="Digital contract signing screen on iPhone mockup" />
             </div>
           </Reveal>
         </Band>
@@ -403,7 +403,7 @@ export default function CaseStudyEmployment() {
             >
               <div className="relative aspect-[820/600] overflow-hidden">
                 <img
-                  src={`${A}case-environment.png`}
+                  src={`${A}case-environment.webp`}
                   alt="Industrial plant releasing smoke over fields at sunset"
                   width={820}
                   height={600}

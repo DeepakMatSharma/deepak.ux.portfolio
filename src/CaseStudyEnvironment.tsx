@@ -118,7 +118,7 @@ export default function CaseStudyEnvironment() {
         {/* Hero image */}
         <Reveal>
           <img
-            src={`${A}case-environment.jpg`}
+            src={`${A}case-environment.webp`}
             alt="Industrial plant releasing smoke over fields at sunset"
             width={1920}
             height={704}
@@ -185,7 +185,7 @@ export default function CaseStudyEnvironment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[50%]">
-              <ScreenShot src="cs-enviro-admin-login.png" alt="Admin Login screen" width={880} height={550} />
+              <ScreenShot src="cs-enviro-admin-login.webp" alt="Admin Login screen" width={880} height={550} />
             </div>
           </Reveal>
 
@@ -199,7 +199,7 @@ export default function CaseStudyEnvironment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[50%]">
-              <ScreenShot src="cs-enviro-dashboard.png" alt="Consolidated monitoring activity dashboard" width={871} height={550} />
+              <ScreenShot src="cs-enviro-dashboard.webp" alt="Consolidated monitoring activity dashboard" width={871} height={550} />
             </div>
           </Reveal>
 
@@ -213,7 +213,7 @@ export default function CaseStudyEnvironment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[50%]">
-              <ScreenShot src="cs-enviro-site-setup.png" alt="Guided site setup and configuration interface" width={871} height={717} />
+              <ScreenShot src="cs-enviro-site-setup.webp" alt="Guided site setup and configuration interface" width={871} height={717} />
             </div>
           </Reveal>
 
@@ -227,7 +227,7 @@ export default function CaseStudyEnvironment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[50%]">
-              <ScreenShot src="cs-enviro-geographical.png" alt="Map-based geographical view of industry locations" width={880} height={581} />
+              <ScreenShot src="cs-enviro-geographical.webp" alt="Map-based geographical view of industry locations" width={880} height={581} />
             </div>
           </Reveal>
 
@@ -241,7 +241,7 @@ export default function CaseStudyEnvironment() {
               </Block>
             </div>
             <div className="lg:shrink-0 lg:basis-[50%]">
-              <ScreenShot src="cs-enviro-reports.png" alt="Configurable reporting workflow with data trends" width={880} height={572} />
+              <ScreenShot src="cs-enviro-reports.webp" alt="Configurable reporting workflow with data trends" width={880} height={572} />
             </div>
           </Reveal>
         </Band>
@@ -291,7 +291,7 @@ export default function CaseStudyEnvironment() {
             >
               <div className="relative aspect-[820/600] overflow-hidden">
                 <img
-                  src={`${A}case-construction.png`}
+                  src={`${A}case-construction.webp`}
                   alt="Construction site with workers, scaffolding and steel reinforcement"
                   loading="lazy"
                   decoding="async"

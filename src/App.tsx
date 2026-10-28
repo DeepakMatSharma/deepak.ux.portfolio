@@ -124,7 +124,7 @@ function CaseStudies() {
               href={PLANERA}
               title="Making complex construction schedules easier to build and manage"
               tag="B2B SaaS • Construction Domain"
-              imageSrc={`${A}case-construction.png`}
+              imageSrc={`${A}case-construction.webp`}
               imageAlt="Construction site with workers, scaffolding and steel reinforcement"
               imagePosition="object-[50%_72%]"
             />
@@ -134,7 +134,7 @@ function CaseStudies() {
               href={EMPLOYMENT}
               title="Bridging the gap between employers and blue-collar workers"
               tag="B2C Mobile App • Talent Marketplace"
-              imageSrc={`${A}case-hiring.png`}
+              imageSrc={`${A}case-hiring.webp`}
               imageAlt="Two professionals shaking hands across a table"
               imagePosition="object-[55%_50%]"
             />
@@ -144,7 +144,7 @@ function CaseStudies() {
               href={ENVIRONMENT}
               title="Redesigning a complex Environmental monitoring platform"
               tag="B2B SaaS • Environmental Technology"
-              imageSrc={`${A}case-environment.jpg`}
+              imageSrc={`${A}case-environment.webp`}
               imageAlt="Industrial smokestacks emitting smoke into twilight sky"
               imagePosition="object-[50%_25%]"
             />
